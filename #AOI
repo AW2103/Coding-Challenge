@@ -1,0 +1,49 @@
+print("Hello User!")
+print("Let's make chemical compounds!")
+input()
+print("You ready?")
+input()
+print("Press enter!")
+input()
+print("1. Oxygen-Type 'O'")
+print("2. Carbon-Type 'C'")
+print("3. Hydrogen-Type 'H'")
+print("4. Chlorine-Type 'Cl'")
+print("Select your two elements!")
+a = (input("Choice1:"))
+b= (input("Choice2:"))
+
+#actual code starts now!
+if a == "O" and b == "O":
+    print("O+O ---> O2")
+elif a == "O" and b == "C":
+    print("2 C+O2 ---> 2 CO")
+    print("C+O2 ---> CO2")
+elif a == "O" and b == "H":
+    print("H+O2 ---> H2O")
+elif a == "O" and b == "Cl":
+    print("Despite having several oxides, Cl won't react directly with O")
+elif a == "C" and b == "O":
+    print("2 C+O2 ---> 2 CO")
+elif a == "C" and b == "H":
+    print("C+2 H2 ---> CH4")
+    print("2 C+H2 ---> C2H2")
+elif a == "C" and b == "Cl":
+    print("CH4+4 Cl2 ---> CCl4+4 HCl")
+    print("Here, the product formed called is called Chloroform.")
+elif a == "H" and b == "O":
+    print("H+O2 ---> H2O")
+elif a == "H" and b == "C":
+    print("C+2 H2 ---> CH4")
+    print("2 C+H2 ---> C2H2")
+elif a == "H" and b == "Cl":
+    print("H2+Cl2 ---> 2HCl")
+elif a == "Cl" and b == "O":
+    print("Despite having several oxides, Cl won't react directly with O")
+elif a == "Cl" and b == "H":
+    print("H2+Cl2 ---> 2HCl")
+elif a == "Cl" and b == "C":
+    print("CH4+4 Cl2 ---> CCl4+4 HCl")
+    print("Here, the product formed called is called Chloroform.")
+else:
+    print("Please enter the correct values.")
